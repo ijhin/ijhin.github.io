@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="ijhin.com" />
+  <meta name="keywords" content="单一入口访问," />
 
 
 
@@ -84,15 +84,16 @@
 
 
 
-<meta name="description" content="有一种平静，叫做死水微澜。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="iJhin">
-<meta property="og:url" content="http://ijhin.com/index.html">
+<meta name="description" content="PHP应用入口模式php单一入口模式是现在非常流行的大型web应用开发模式，一些知名框架都采用这种，比如laravel，Yii2，zendframework，CI，thinkPHP等，观察这些框架的URL，基本上都是http://xxx.com/index.php?m=xxx&amp;amp;c=xxx&amp;amp;a=xxx，。当然还有多入口的框架，比如帝国CMS，ECShop等，多入口框架的URL，多为h">
+<meta property="og:type" content="article">
+<meta property="og:title" content="单一入口文件index.php的几点分析">
+<meta property="og:url" content="http://ijhin.com/php/20160707/single-entry.html">
 <meta property="og:site_name" content="iJhin">
-<meta property="og:description" content="有一种平静，叫做死水微澜。">
+<meta property="og:description" content="PHP应用入口模式php单一入口模式是现在非常流行的大型web应用开发模式，一些知名框架都采用这种，比如laravel，Yii2，zendframework，CI，thinkPHP等，观察这些框架的URL，基本上都是http://xxx.com/index.php?m=xxx&amp;amp;c=xxx&amp;amp;a=xxx，。当然还有多入口的框架，比如帝国CMS，ECShop等，多入口框架的URL，多为h">
+<meta property="og:updated_time" content="2016-07-07T11:52:00.781Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iJhin">
-<meta name="twitter:description" content="有一种平静，叫做死水微澜。">
+<meta name="twitter:title" content="单一入口文件index.php的几点分析">
+<meta name="twitter:description" content="PHP应用入口模式php单一入口模式是现在非常流行的大型web应用开发模式，一些知名框架都采用这种，比如laravel，Yii2，zendframework，CI，thinkPHP等，观察这些框架的URL，基本上都是http://xxx.com/index.php?m=xxx&amp;amp;c=xxx&amp;amp;a=xxx，。当然还有多入口的框架，比如帝国CMS，ECShop等，多入口框架的URL，多为h">
 
 
 
@@ -113,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://ijhin.com/"/>
+  <link rel="canonical" href="http://ijhin.com/php/20160707/single-entry.html"/>
 
-  <title> iJhin </title>
+  <title> 单一入口文件index.php的几点分析 | iJhin </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -146,9 +147,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -268,9 +267,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -290,10 +289,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/php/20160707/single-entry.html" itemprop="url">
-                  单一入口文件index.php的几点分析
-                </a>
+                单一入口文件index.php的几点分析
               
             
           </h1>
@@ -359,9 +355,7 @@
       
 
       
-        
-          
-            <h3 id="PHP应用入口模式"><a href="#PHP应用入口模式" class="headerlink" title="PHP应用入口模式"></a>PHP应用入口模式</h3><p>php单一入口模式是现在非常流行的大型web应用开发模式，一些知名框架都采用这种，比如laravel，Yii2，zendframework，CI，thinkPHP等，观察这些框架的URL，基本上都是<code>http://xxx.com/index.php?m=xxx&amp;c=xxx&amp;a=xxx</code>，。当然还有多入口的框架，比如帝国CMS，ECShop等，多入口框架的URL，多为<code>http://xxx.com/index.php</code>、<code>http://xxx.com/login.php</code>路由不经过入口文件分发。</p>
+        <h3 id="PHP应用入口模式"><a href="#PHP应用入口模式" class="headerlink" title="PHP应用入口模式"></a>PHP应用入口模式</h3><p>php单一入口模式是现在非常流行的大型web应用开发模式，一些知名框架都采用这种，比如laravel，Yii2，zendframework，CI，thinkPHP等，观察这些框架的URL，基本上都是<code>http://xxx.com/index.php?m=xxx&amp;c=xxx&amp;a=xxx</code>，。当然还有多入口的框架，比如帝国CMS，ECShop等，多入口框架的URL，多为<code>http://xxx.com/index.php</code>、<code>http://xxx.com/login.php</code>路由不经过入口文件分发。</p>
 <h3 id="单一入口的优点"><a href="#单一入口的优点" class="headerlink" title="单一入口的优点"></a>单一入口的优点</h3><p>单一入口通常是指一个项目或者应用具有一个统一（但并不一定是唯一）的入口文件，也就是说项目的所有功能操作都是通过这个入口文件进行的，并且往往入口文件是第一步被执行的。 </p>
 <p>单一入口的好处是项目整体比较规范，因为同一个入口，往往其不同操作之间具有相同的规则。另外一个方面就是单一入口带来的好处是控制较为灵活，因为拦截方便了，类似如一些权限控制、用户登录方面的判断和操作可以统一处理了。</p>
 <h3 id="单一入口的缺点"><a href="#单一入口的缺点" class="headerlink" title="单一入口的缺点"></a>单一入口的缺点</h3><p>单一入口的应用程序的URL是由很多参数组成，比如<code>模型</code>、<code>控制器</code>、<code>方法</code>,当然这些都可以通过<code>url重写</code>改变，变得美美哒！</p>
@@ -380,163 +374,95 @@
 <h3 id="ThinkPHP单一入口实现"><a href="#ThinkPHP单一入口实现" class="headerlink" title="ThinkPHP单一入口实现"></a>ThinkPHP单一入口实现</h3><p>话不多说，代码奉上,请在thinkPHP v3.1中，新建应用后的的入口文件中实现：</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取控制器名</span></span><br><span class="line">$control = <span class="keyword">isset</span>($_REQUEST[<span class="string">'m'</span>])? $_REQUEST[<span class="string">'m'</span>] : <span class="string">'Index'</span>;</span><br><span class="line"><span class="comment">//获取方法名</span></span><br><span class="line">$action = <span class="keyword">isset</span>($_REQUEST[<span class="string">'a'</span>])? $_REQUEST[<span class="string">'a'</span>] : <span class="string">'Index'</span>;</span><br><span class="line"></span><br><span class="line">$obj = <span class="keyword">new</span> $control();</span><br><span class="line">$obj-&gt;action()</span><br><span class="line"></span><br><span class="line"><span class="comment">//控制器类代码</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Index</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">index</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">'This is Index index'</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">handle</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">'Thies is Index handle'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/essay/20160620/hello-world.html" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-20T23:24:31+08:00" content="2016-06-20">
-              2016-06-20
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/essay/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/essay/20160620/hello-world.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="essay/20160620/hello-world.html" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/单一入口访问/" rel="tag">#单一入口访问</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>  作为一枚程序员，配置好新玩具，如果不说一句“Hello World”，总感觉少点什么！好吧作为纪念，我就郑重的写下这句话：</p>
-<h2 id="Hello-World-！"><a href="#Hello-World-！" class="headerlink" title="Hello World ！"></a>Hello World ！</h2>
-          
-        
-      
-    </div>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/essay/20160620/hello-world.html" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="php/20160707/single-entry.html"
+     data-title="单一入口文件index.php的几点分析"
+     data-content=""
+     data-url="http://ijhin.com/php/20160707/single-entry.html">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="php/20160707/single-entry.html"
+           data-title="单一入口文件index.php的几点分析" data-url="http://ijhin.com/php/20160707/single-entry.html">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -556,8 +482,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -607,6 +542,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP应用入口模式"><span class="nav-number">1.</span> <span class="nav-text">PHP应用入口模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单一入口的优点"><span class="nav-number">2.</span> <span class="nav-text">单一入口的优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单一入口的缺点"><span class="nav-number">3.</span> <span class="nav-text">单一入口的缺点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单一入口文件的简单实现"><span class="nav-number">4.</span> <span class="nav-text">单一入口文件的简单实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ThinkPHP单一入口实现"><span class="nav-number">5.</span> <span class="nav-text">ThinkPHP单一入口实现</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -703,6 +649,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
