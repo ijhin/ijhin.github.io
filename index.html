@@ -152,7 +152,7 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
+      <div class="header-inner"><div class="site-meta custom-logo">
   
 
   <div class="custom-logo-site-title">
@@ -269,6 +269,247 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/interview/20160708/interview.html" itemprop="url">
+                  PHP面试题集锦
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-08T11:11:31+08:00" content="2016-07-08">
+              2016-07-08
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/interview/" itemprop="url" rel="index">
+                    <span itemprop="name">面试</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/interview/20160708/interview.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="interview/20160708/interview.html" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>试题来源于网络。</p>
+<h2 id="HTML-CSS"><a href="#HTML-CSS" class="headerlink" title="HTML + CSS"></a>HTML + CSS</h2><h3 id="div-和span-还有p-标签三者之间的区别"><a href="#div-和span-还有p-标签三者之间的区别" class="headerlink" title="div 和span 还有p 标签三者之间的区别"></a>div 和span 还有p 标签三者之间的区别</h3><p>从语义化的角度来讲:<br><code>div</code> 和<code>span</code> 标签对于它们包含的元素是没有意义的，而<code>p</code>标签则是一个语义化标签，表示一个段落。所以<code>div</code> 和<code>span</code> 一般是用来布局。<br>从显示的角度来讲:<br><code>span</code> 是内联的，用在一小块的内联HTML中，前后不断行，<code>div</code> 元素是块级的，等同于其前后有断行，<code>p</code>元素是块级的，前后断行，而且还要再隔一行，相当于断两行。</p>
+<h3 id="CSS-中class-和id-的区别"><a href="#CSS-中class-和id-的区别" class="headerlink" title="CSS 中class 和id 的区别"></a>CSS 中class 和id 的区别</h3><p><code>id</code> 每个页<code>id</code>是唯一的不能重复;<code>class</code> 可以设置多个<code>class</code>为同一个值.</p>
+<h3 id="请列举几个meta-元素"><a href="#请列举几个meta-元素" class="headerlink" title="请列举几个meta 元素"></a>请列举几个meta 元素</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"keywords"</span> <span class="attr">contect</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">//向搜索引擎说明你的网页的关键词</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">contect</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">//告诉搜索引擎你的站点的主要内容</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"author"</span> <span class="attr">contect</span>=<span class="string">"你的姓名"</span>&gt;</span></span><br><span class="line">//告诉搜索引擎你的站点的制作的作者</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">contect</span>=<span class="string">"text/html"</span>;<span class="attr">charset</span>=<span class="string">utf-8</span>"&gt;</span></span><br><span class="line">//指定字符集</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"refresh"</span> <span class="attr">contect</span>=<span class="string">"n;url="</span>&gt;</span></span><br><span class="line">//定时让网页在指定的时间n 内跳转</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"expires"</span> <span class="attr">contect</span>=<span class="string">"Mon,12 May 2001 00:20:00 GMT"</span>&gt;</span></span><br><span class="line">//可以用于设定网页的到期时间，一旦过期则必须到服务器上重新调用。</span><br><span class="line">需要注意的是必须使用GMT 时间格式</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"pragma"</span> <span class="attr">contect</span>=<span class="string">"no-cache"</span>&gt;</span></span><br><span class="line">//禁用缓存</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"set-cookie"</span> <span class="attr">contect</span>=<span class="string">"Mon,12 May 2001 00:20:00 GMT"</span>&gt;</span></span><br><span class="line">//cookie 设定，如果网页过期，存盘的cookie 将被删除。需要注意的也是必须使用GMT 时间格式</span><br></pre></td></tr></table></figure>
+<h3 id="请写出一下html-标签的含义"><a href="#请写出一下html-标签的含义" class="headerlink" title="请写出一下html 标签的含义"></a>请写出一下html 标签的含义</h3><p><code>input</code> <code>form</code> <code>script</code> <code>style</code> <code>table</code> <code>b</code> <code>img</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> /&gt;</span> //标签用于搜集用户信息。根据不同的type 属性值， 输入字段拥有很多种形式。输入字段可以是文本字段、复选框、掩码后的文本控件、</span><br><span class="line">单选按钮、按钮等等。</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span> //标签用于为用户输入创建HTML 表单。表单能够包含input 元素，比如文本字段、复选框、单选框、提交按钮等等。</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="xml"> //标签用于定义客户端脚本，比如JavaScript。script 元素既可以包含脚本语句，也可以通过src 属性指向外部脚本文件。</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="xml"> //标签用于为HTML 文档定义样式信息。</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span> //标签定义HTML 表格。简单的HTML 表格由table 元素以及一个或多个tr 、</span><br><span class="line">th 或td 元素组成。</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>//呈现粗体文本效果。</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> /&gt;</span> //元素向网页中嵌入一幅图像。</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="用html、css-编写一个两列布局的网页"><a href="#用html、css-编写一个两列布局的网页" class="headerlink" title="用html、css 编写一个两列布局的网页"></a>用html、css 编写一个两列布局的网页</h3><p>要求:右侧固定宽度200px,左侧自适应</p>
+<p>方案1：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--HTML--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"wrap"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"content"</span> <span class="attr">style</span>=<span class="string">"height:340px;"</span>&gt;</span>自适应区<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"sidebar"</span> <span class="attr">style</span>=<span class="string">"height:240px;"</span>&gt;</span>固定宽度区<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"footer"</span>&gt;</span>确保前面的定位不会导致后面的变形<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--CSS--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span><br><span class="line">    #content,#sidebar,#footer &#123;border: 1px solid #ccc;&#125;</span><br><span class="line">    #wrap &#123;display: table; width: 100%;&#125;</span><br><span class="line">    #content &#123;display: table-cell;&#125;</span><br><span class="line">    #sidebar &#123;display: table-cell; width: 200px;&#125;</span><br><span class="line"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>方案2：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--HTML--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"wrap"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"content"</span> <span class="attr">style</span>=<span class="string">"height: 140px;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"contentb"</span>&gt;</span>content自适应区<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"sidebar"</span> <span class="attr">style</span>=<span class="string">"height: 240px;"</span>&gt;</span>sidebar固定宽度区<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"footer"</span>&gt;</span>确保前面的定位不会导致后面的变形<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--CSS--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span><br><span class="line">    #warp &#123;*zoom: 1; position: relative;&#125;</span><br><span class="line">    #sidebar &#123;width: 200px; float: right; border: 1px solid #ccc;&#125;</span><br><span class="line">    #content &#123;margin-left: -210px; float: left; widht:100%;&#125;</span><br><span class="line">    #contentb &#123;margin-left: 210px; border: 1px solid #ccc;&#125;</span><br><span class="line">    #footer &#123;border: 1px solid #ccc; margin-top: 10px; clear : both;&#125;</span><br><span class="line"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><h3 id="js表单弹出对话框函数是-获得输入焦点函数是"><a href="#js表单弹出对话框函数是-获得输入焦点函数是" class="headerlink" title="js表单弹出对话框函数是?获得输入焦点函数是?"></a>js表单弹出对话框函数是?获得输入焦点函数是?</h3><p>弹出对话框函数:<code>alert()</code>, <code>prompt()</code>, <code>confirm()</code></p>
+<p>获得输入焦点函数:<code>focus()</code></p>
+<h3 id="js-的页面跳转函数是-怎么引入一个外部js-文件"><a href="#js-的页面跳转函数是-怎么引入一个外部js-文件" class="headerlink" title="js 的页面跳转函数是?怎么引入一个外部js 文件?"></a>js 的页面跳转函数是?怎么引入一个外部js 文件?</h3><p>页面跳转函数使用：<br>    <code>window.location.herf=””</code></p>
+<p>引入外部js 使用<br>    <code>&lt;script type=&quot;text/javascript&quot; src=”” /&gt;&lt;/script&gt;</code></p>
+<h3 id="解释下面语句的意思"><a href="#解释下面语句的意思" class="headerlink" title="解释下面语句的意思:"></a>解释下面语句的意思:</h3><p><code>document.form[“formName”].submit</code></p>
+<p>获取<code>name</code> 为<code>formName</code> 的表单并将该表单数据提交到服务器。但这行代码是不能运行的，<br>有两处错误:<br>一是通过表单名称来获取表单得到时候，应该写成<br><code>document.forms[&#39;formName&#39;]</code>,<br>提交表单事件使用<code>submit</code>方法，需要加上括号，<br>下面给出简单的示例代码：<br><code>document.forms[&#39;formName&#39;].submit()</code></p>
+<h3 id="当鼠标划过文本框-自动选中文本框内容"><a href="#当鼠标划过文本框-自动选中文本框内容" class="headerlink" title="当鼠标划过文本框,自动选中文本框内容"></a>当鼠标划过文本框,自动选中文本框内容</h3><p><code>&lt;input id=&quot;txt&quot; type=&quot;text&quot; value=&quot;baidu&quot; /&gt;</code></p>
+<p>示例代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"txt"</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">value</span>=<span class="string">"baidu"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span><br><span class="line">        var textBox = document.getElementById('txt');</span><br><span class="line">        textBox.onmouseover = function()&#123;</span><br><span class="line">            this.select();</span><br><span class="line">        &#125;</span><br><span class="line">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="删除数组中重复的元素"><a href="#删除数组中重复的元素" class="headerlink" title="删除数组中重复的元素"></a>删除数组中重复的元素</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">array_unique</span>(<span class="params">arr</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> result = arr;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; arr.length; j++)&#123;</span><br><span class="line">            temp = arr[i];</span><br><span class="line">            <span class="comment">//如果当前元素与后面一个元素相等，则移除该元素</span></span><br><span class="line">            <span class="keyword">if</span>((i + j + <span class="number">1</span>) &lt; arr.length &amp;&amp; temp === arr[i + j + <span class="number">1</span>])&#123;</span><br><span class="line">                result.splice(i + j + <span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> a = [<span class="number">4</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">5</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="number">43</span>,<span class="number">7</span>,<span class="number">0</span>,<span class="literal">false</span>,<span class="string">''</span>,&#123;&#125;];</span><br><span class="line"><span class="keyword">var</span> b = array_unique(a);</span><br><span class="line">alert(b);</span><br><span class="line"><span class="comment">//4,7,8,5,6,43,0,false,,[object Object]</span></span><br></pre></td></tr></table></figure>
+<h3 id="添加html-元素的事件"><a href="#添加html-元素的事件" class="headerlink" title="添加html 元素的事件"></a>添加html 元素的事件</h3><p>(1).直接作为元素的属性，如<br><code>&lt;img onclick=&quot;alert( &#39;hello&#39; );&quot; src=&quot;hello.jpg&quot;&gt;</code><br>(2).使用DOM 0 级事件，简单，兼容性好，如<br><code>img.onclick = function(){}</code><br>(3).使用DOM 2 级事件，功能更强大，<br>在非IE 等标准浏览其中，使用<code>addEventListener</code>，<br>在IE 浏览器中则使用<code>attachEvent</code>来实现。</p>
+<h3 id="定时跳转"><a href="#定时跳转" class="headerlink" title="定时跳转"></a>定时跳转</h3><p>假设a.html 和b.html 在同一个文件夹下,用JavaScript实现当打开a.html 五秒钟后自动跳转到b.html</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">goTob</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">window</span>.location.href = <span class="string">"b.html"</span>;</span><br><span class="line">    <span class="built_in">window</span>.close();</span><br><span class="line">&#125;</span><br><span class="line">setTimeout(<span class="string">"goTob()"</span>,<span class="number">5000</span>);<span class="comment">//5秒后自动跳转b.html</span></span><br></pre></td></tr></table></figure>
+<h3 id="js中的网页前进和后退的代码"><a href="#js中的网页前进和后退的代码" class="headerlink" title="js中的网页前进和后退的代码"></a>js中的网页前进和后退的代码</h3><p>前进：<code>history.forward()</code>或者<code>history.go(1)</code>；<br>后退：<code>history.back()</code>或者<code>history.go(-1)</code>；</p>
+<h3 id="实现点击按钮弹出窗口的代码"><a href="#实现点击按钮弹出窗口的代码" class="headerlink" title="实现点击按钮弹出窗口的代码"></a>实现点击按钮弹出窗口的代码</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'button'</span>).onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="built_in">window</span>.open(<span class="string">'page.html'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中，button 是按钮的id，page.html 是要弹出的窗口页面。</p>
+<h3 id="JavaScript-包括那些基本数据类型"><a href="#JavaScript-包括那些基本数据类型" class="headerlink" title="JavaScript 包括那些基本数据类型?"></a>JavaScript 包括那些基本数据类型?</h3><p><code>JavaScript</code> 中包括5 种基本数据类型:<br>分别是<br><code>Number</code>，<code>String</code>，<code>Boolean</code>，<code>Null</code>，<code>Undefined</code></p>
+<h3 id="通过javascript-判断一个窗口是否已经被屏蔽"><a href="#通过javascript-判断一个窗口是否已经被屏蔽" class="headerlink" title="通过javascript 判断一个窗口是否已经被屏蔽"></a>通过javascript 判断一个窗口是否已经被屏蔽</h3><p>获取<code>open()</code>的返回值，如果是<code>null</code>，就是屏蔽了</p>
+<h3 id="JavaScript-的常用对象"><a href="#JavaScript-的常用对象" class="headerlink" title="JavaScript 的常用对象"></a>JavaScript 的常用对象</h3><p>分三类，详细的看一下<code>javascript</code> 参考手册<br><code>JavaScript</code> 本地对象和内置对象<br><code>Browser</code> 对象<code>(BOM)</code><br><code>HTML DOM</code> 对象</p>
+<h3 id="浏览器IE-和非IE-浏览器的划分，区别是什么"><a href="#浏览器IE-和非IE-浏览器的划分，区别是什么" class="headerlink" title="浏览器IE 和非IE 浏览器的划分，区别是什么"></a>浏览器IE 和非IE 浏览器的划分，区别是什么</h3><p><code>IE</code>核心就是<code>windows</code>自带的<code>explorer.exe</code>,<code>windows</code>从<code>windows95</code>开始就绑定用<code>IE浏览器</code>了；</p>
+<p>非IE核心的浏览器，就是网景公司的浏览器<code>Netscape</code>以及<code>opera</code> 、<code>firefox</code>等等，跟IE没有关系的。<code>IE浏览器</code>崩溃后，这些非IE内核的浏览器不受影响。</p>
+<p>IE内核的浏览器，就是以IE浏览器为基础，换了一件马甲，改动了一下外观界面，稍微增加了一些功能，比如，<code>360浏览器</code>、<code>MyIE</code>、<code>Maxthon浏览器</code>等等，这种类型的浏览器很多。只要IE浏览器出现问题，一般来说，用IE内核的浏览器会同时出问题。</p>
+<h3 id="用JavaScript-取得一个input-的值"><a href="#用JavaScript-取得一个input-的值" class="headerlink" title="用JavaScript 取得一个input 的值"></a>用JavaScript 取得一个input 的值</h3><p>取值:<code>document.getElementById(&#39;idname&#39;).value</code></p>
+<h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><h3 id="简述PHP"><a href="#简述PHP" class="headerlink" title="简述PHP"></a>简述PHP</h3><p><code>PHP</code>一个嵌套的缩写名称，是英文超级文本预处理语言<code>（PHP:Hypertext Preprocessor）</code>的缩写,是一个基于服务端来创建动态网站的脚本语言,可以结合<code>html</code><br>来生成网站主页</p>
+<h3 id="PHP-支持的八种原始类型"><a href="#PHP-支持的八种原始类型" class="headerlink" title="PHP 支持的八种原始类型"></a>PHP 支持的八种原始类型</h3><p>四种标准类型:<br><code>boolean</code>(布尔型) <code>integer</code>(整型) <code>float</code>(浮点型) <code>string</code>(字符串)<br>两种复合类型:<br><code>array</code>(数组) <code>object</code>(对象)<br>两种特殊类型:<br><code>resource</code>(资源) <code>NULL</code>(null)</p>
+<h3 id="strlen-与mb-strlen-的作用分别是什么"><a href="#strlen-与mb-strlen-的作用分别是什么" class="headerlink" title="strlen()与mb_strlen()的作用分别是什么?"></a>strlen()与mb_strlen()的作用分别是什么?</h3><p><code>strlen</code> 和<code>mb_strlen</code> 都是用于获取字符串长度的，其中<code>strlen</code> 只针对单字节编码字符，也就是说它计算的是字符串的总字节数，如果是多字节编码，如<code>gbk</code> 和<code>utf8</code>，<br>使用<code>strlen</code>得到的不是字符的个数，而是该字符的总字节数，可以使用<code>mb_strlen</code> 获取其字符个数，使用<code>mb_strlen</code> 要注意两点，一是要开启<code>mbstring</code> 扩展，二是要指定字符集。</p>
+<p>示例：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?PHP</span></span><br><span class="line">$str1 = <span class="string">"php"</span>;</span><br><span class="line"><span class="keyword">echo</span> strlen($str1); <span class="comment">//3</span></span><br><span class="line"></span><br><span class="line">$str2 = <span class="string">"巅峰工作室"</span>;</span><br><span class="line"><span class="keyword">echo</span> strlen($str2);<span class="comment">//15 当前页面是UTF8字符集</span></span><br><span class="line"><span class="keyword">echo</span> mb_strlen($str2);<span class="comment">//15 未指定字符集，使用内部字符编码（单字节）</span></span><br><span class="line"><span class="keyword">echo</span> mb_strlen($str2,<span class="string">'utf8'</span>);<span class="comment">//5 使用utf8;</span></span><br><span class="line"><span class="keyword">echo</span> mb_strlen($str2,<span class="string">'gbk'</span>);<span class="comment">//8 使用GBK;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="实现中文字串截取无乱码的方法"><a href="#实现中文字串截取无乱码的方法" class="headerlink" title="实现中文字串截取无乱码的方法"></a>实现中文字串截取无乱码的方法</h4><p>方法一，使用<code>php</code> 内置函数<code>mb_substr()</code><br>方法二，自定义函数，以<code>utf8</code> 为例</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">header(<span class="string">'Content-Type:text/html;charset=utf8'</span>);</span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * utf8编码字符串截取无乱码</span><br><span class="line"> * <span class="doctag">@param</span> $str string 要处理的字符串</span><br><span class="line"> * <span class="doctag">@param</span> $start int 从哪个位置开始截取</span><br><span class="line"> * <span class="doctag">@param</span> $length int 要截取的字符串的个数，默认从起始位置到末尾</span><br><span class="line"> * <span class="doctag">@return</span> string 截取后的字符串</span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">substr_utf8</span><span class="params">($str, $start, $length = null)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> join(<span class="string">""</span>,array_slice(preg_split(<span class="string">"//u"</span>, $str, <span class="number">-1</span>, PREG_SPLIT_NO_EMPTY), $start, $length));</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//示例</span></span><br><span class="line">$str = <span class="string">"巅峰工作室"</span>;</span><br><span class="line"><span class="keyword">echo</span> substr_utf8($str,<span class="number">0</span>,<span class="number">2</span>);<span class="comment">//输出 巅峰</span></span><br></pre></td></tr></table></figure>
+<h4 id="求解字符串”中国-2-北-333-京”的字符串-一个中文一个字符-并找到第四个字符”北”"><a href="#求解字符串”中国-2-北-333-京”的字符串-一个中文一个字符-并找到第四个字符”北”" class="headerlink" title="求解字符串”中国 2 北 333 京”的字符串(一个中文一个字符),并找到第四个字符”北”"></a>求解字符串”中国 2 北 333 京”的字符串(一个中文一个字符),并找到第四个字符”北”</h4><p>方法1：<br>使用php内置函数,确保配置中已打开<code>mbstring</code>扩展<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">header(<span class="string">'Content-Type:text/html;charset=utf8'</span>);</span><br><span class="line">$str = <span class="string">'中国2北333京'</span>;</span><br><span class="line"><span class="keyword">echo</span> mb_strlen($str,<span class="string">'utf8'</span>); <span class="comment">//8 将一个字符转换为一个中文</span></span><br><span class="line"><span class="keyword">echo</span> mb_substr($str,<span class="number">3</span>,<span class="number">1</span>,<span class="string">'utf8'</span>); <span class="comment">// 北</span></span><br></pre></td></tr></table></figure></p>
+<p>方法2：<br>自定义函数实现求其长度,截取使用上面的定义的<code>substr_utf8</code><br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">header(<span class="string">'Content-Type:text/html;charset=utf8'</span>);</span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * 计算utf8编码字符串的长度</span><br><span class="line"> * <span class="doctag">@param</span> $str string 要计算的字符串</span><br><span class="line"> * <span class="doctag">@return</span> int 返回字符串的长度</span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">strlen_utf8</span><span class="params">($str)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> count(preg_split(<span class="string">'//u'</span>, $str, <span class="number">-1</span>, PREG_SPLIT_NO_EMPTY));</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//示例</span></span><br><span class="line">$str = <span class="string">"中国2北333京"</span>;</span><br><span class="line"><span class="keyword">echo</span> strlen_utf8($str);<span class="comment">//输出 8</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="预定义全局变量"><a href="#预定义全局变量" class="headerlink" title="预定义全局变量"></a>预定义全局变量</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">$_SERVER[<span class="string">'DOCUMENT_ROOT'</span>]</span><br><span class="line"><span class="comment">//当前运行脚本所在的文档根目录</span></span><br><span class="line">$_SERVER[<span class="string">'HTTP_HOST '</span>]</span><br><span class="line"><span class="comment">//当前请求的Host: 头部的内容</span></span><br><span class="line">$_SERVER[<span class="string">'REMOTE_ADDR'</span>]</span><br><span class="line"><span class="comment">//正在浏览当前页面用户的IP 地址</span></span><br><span class="line">$_SERVER[<span class="string">'HTTP_REFERER'</span>]</span><br><span class="line"><span class="comment">//链接到当前页面的前一页面的URL 地址</span></span><br><span class="line">$_SERVER[<span class="string">'SERVER_NAME'</span>]</span><br><span class="line"><span class="comment">//当前运行脚本所在服务器主机的名称</span></span><br><span class="line">$_FILES</span><br><span class="line"><span class="comment">//包含有所有上传的文件信息</span></span><br><span class="line">$_FILES[<span class="string">'userfile'</span>][<span class="string">'name'</span>]</span><br><span class="line"><span class="comment">//客户端机器文件的原名称</span></span><br><span class="line">$_FILES[<span class="string">'userfile'</span>][<span class="string">'type'</span>]</span><br><span class="line"><span class="comment">//文件MIME 类型，如果浏览器提供此信息的话，如"image/gif"</span></span><br><span class="line">$_FILES[<span class="string">'userfile'</span>][<span class="string">'size'</span>]</span><br><span class="line"><span class="comment">//已上传文件的大小，单位为字节</span></span><br><span class="line">$_FILES[<span class="string">'userfile'</span>][<span class="string">'tmp_name'</span>]</span><br><span class="line"><span class="comment">//文件被上传后在服务端储存的临时文件名</span></span><br><span class="line">$_FILES[<span class="string">'userfile'</span>][<span class="string">'error'</span>]</span><br><span class="line"><span class="comment">//和该文件上传相关的错误代码</span></span><br></pre></td></tr></table></figure>
+<h3 id="include、require、include-once、require-once区别"><a href="#include、require、include-once、require-once区别" class="headerlink" title="include、require、include_once、require_once区别"></a>include、require、include_once、require_once区别</h3><p><code>include</code>和<code>require</code>的区别:对包含文件的需求程度。</p>
+<p><code>include</code>就是包含，如果被包含的文件不存在的话，那么则会提示一个错误，但是程序会继续执行下去。</p>
+<p><code>require</code>意思是需要，如果被包含文件不存在或者无法打开的时候，则会提示错误，并且会终止程序的执行。</p>
+<p>这两种结构除了在如何处理失败之外完全一样。</p>
+<p><code>once</code>的意思是一次，那么<code>include_once</code> 和<code>require_once</code>表示只包含一次，避免重复包含。</p>
+<h3 id="用最少的代码写一个求3-值最大的函数"><a href="#用最少的代码写一个求3-值最大的函数" class="headerlink" title="用最少的代码写一个求3 值最大的函数"></a>用最少的代码写一个求3 值最大的函数</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">//定义函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">maximum</span><span class="params">($a,$b,$c)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> $a &gt; $b ? ($a &gt; $c ? $a : $c) :($b &gt; $c ? $b : $c);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//调用</span></span><br><span class="line"><span class="keyword">echo</span> maximum(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>); <span class="comment">//3</span></span><br></pre></td></tr></table></figure>
+<h3 id="POST-和-GET-的介绍"><a href="#POST-和-GET-的介绍" class="headerlink" title="POST 和 GET 的介绍"></a>POST 和 GET 的介绍</h3><p><code>POST</code>根据你的<code>php.ini</code>文件配置(默认是<code>8M</code>)；<code>GET</code>的话大小限制在<code>2kb</code>。</p>
+<p>关于<code>GET/POST</code>的最大传输数据,很多人存在误解.<br>先简单的说:</p>
+<ol>
+<li><code>HTTP协议</code>的理论上,<code>GET/POST</code>长度没有限制。</li>
+<li>限制来自于具体的浏览器<code>(ff,chrome,IE)</code>和服务器<code>(apache,nginx)</code>。</li>
+<li>综上,可看出,最大容量肯定不是一个固定的数字,只简单说2K等当然是错误的。</li>
+</ol>
+<p>详细的说(提交方法的区别):</p>
+<p>1、<code>GET</code>请求能够被<code>cache</code>，<code>GET</code>请求能够被保存在浏览器的浏览历史里面（密码等重要数据<code>GET</code>提交，别人查看历史记录，就可以直接看到这些私密数据）<code>POST</code>不进行缓存。</p>
+<p>2、<code>GET</code>参数是带在<code>URL</code>后面，传统IE中URL的最大可用长度为<code>2048</code>    字符，其他浏览器对<code>URL</code> 长度限制实现上有所不同。<code>POST请求</code>无长度限制（目前理论上是这样的）。</p>
+<p>3、<code>GET</code>提交的数据大小，不同浏览器的限制不同，一般在<code>2k-8K</code>之间，<code>POST</code> 提交数据比较大，大小靠服务器的设定值限制，而且某些数据只能用POST 方法「携带」，比如<code>file</code>。</p>
+<p>4、全部用<code>POST</code>不是十分合理，最好先把请求按功能和场景分下类，对数据请求频繁，数据不敏感且数据量在普通浏览器最小限定的<code>2k</code>范围内，这样的情况使用<code>GET</code>。其他地方使用<code>POST</code>。</p>
+<p>5、<code>GET</code>的本质是<code>「得」</code>，而<code>POST</code>的本质是<code>「给」</code>。而且，<code>GET</code>是<code>「幂等」</code>的，在这一点上，<code>GET</code>被认为是<code>「安全的」</code>。但实际上<code>server端</code>也可以用作资源更新，但是这种用法违反了约定，容易造成<code>CSRF（跨
+    站请求伪造）</code>。</p>
+<p>理解上的误区：</p>
+<p>1、首先即使有长度限制，也是限制的是整个<code>URI长度</code>，而不仅仅是你的参数值数据长度。</p>
+<p>2、<code>HTTP协议</code>从未规定G<code>ET/POST</code>的请求长度限制是多少。</p>
+<pre><code>The HTTP protocol does not place any a priori limit on the length of a URI.
+Servers MUST be able to handle the URI of any resource they serve, and
+SHOULD be able to handle URIs of unbounded length if they provide
+GET-based forms that could generate such URIs. A server SHOULD return
+414 (Request-URI Too Long) status if a URI is longer than the server can
+handle (see section 10.4.15).
+Note: Servers ought to be cautious about depending on URI lengths
+above 255 bytes, because some older client or proxy implementations
+might not properly support these lengths.
+</code></pre><p>3、所谓的请求长度限制是由<code>浏览器</code>和<code>web服务器</code>决定和设置的，各<br>种浏览器和web 服务器的设定均不一样，这依赖于各个浏览器厂家的规定或者可以根据web 服务器的处理能力来设定。</p>
+<p>如(注意浏览器在不断更新,因此不要死记此数字)：IE 对URL 长度的限制是2083 字节(2K+35)。</p>
+<p>下面就是对各种浏览器和服务器的最大处理能力做一些说明.</p>
+<pre><code>Microsoft Internet Explorer (Browser)
+IE 浏览器对URL 的最大限制为2083 个字符，如果超过这个数字，提交按钮没有任何反应。
+Firefox (Browser)
+对于Firefox 浏览器URL 的长度限制为65,536 个字符。
+Safari (Browser)
+URL 最大长度限制为80,000 个字符。
+Opera (Browser)
+URL 最大长度限制为190,000 个字符。
+Google (chrome)
+URL 最大长度限制为8182 个字符。
+Apache (Server)
+能接受最大url 长度为8,192 个字符。
+Microsoft Internet Information Server(IIS)
+能接受最大url 的长度为16,384 个字符。
+</code></pre><p>通过上面的数据可知，为了让所有的用户都能正常浏览，<code>URL</code>最好不要超过IE 的最大长度限制(2083 个字符），当然，如果<code>URL</code>不直接提供给用户，而是提供给程序调用，这时的长度就只受<code>Web服务器</code><br>影响了。</p>
+<p>注：对于中文的传递，最终会为<code>urlencode</code>后的编码形式进行传递，如果浏览器的编码为<code>UTF8</code> 的话，一个汉字最终编码后的字符长度为<code>9个字符</code>。<br>因此如果使用的<code>GET</code>方法，最大长度等于<code>URL</code> 最大长度减去实际路径中的字符数。</p>
+<h4 id="如何判断接收的数据是get-数据还是post-数据"><a href="#如何判断接收的数据是get-数据还是post-数据" class="headerlink" title="如何判断接收的数据是get 数据还是post 数据?"></a>如何判断接收的数据是get 数据还是post 数据?</h4><p><code>$_SERVER[&#39;REQUEST_METHOD&#39;]</code></p>
+<h3 id="echo-print-print-r-的区别"><a href="#echo-print-print-r-的区别" class="headerlink" title="echo print() print_r()的区别"></a>echo print() print_r()的区别</h3><p><code>echo</code>是一个语言结构，输出一个或多个字符串；</p>
+<p><code>print()</code>实际上不是一个函数（它是一个语言结构），因此你可以不必使用圆括号来括起它的参数列表，它输出一个字符串；</p>
+<p><code>print_r ()</code>是一个函数，打印变量的信息，基本类型，数组，对象。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">header(<span class="string">'Content-Type:text/html,charset:utf8'</span>);</span><br><span class="line">$a = <span class="string">'巅峰'</span>;</span><br><span class="line">$b = <span class="string">'工作室'</span>;</span><br><span class="line"><span class="keyword">echo</span> $a,$b;</span><br><span class="line"><span class="keyword">print</span>(<span class="string">'&lt;br/&gt;'</span>);</span><br><span class="line"><span class="keyword">echo</span> $a.$b;</span><br><span class="line"><span class="comment">/*</span><br><span class="line">注意: ','是echo本身支持的一种语法,而'.'则是字符串连接操作符,使用','的效率要高一些</span><br><span class="line">*/</span></span><br></pre></td></tr></table></figure>
+<h3 id="PHP-格式化时间"><a href="#PHP-格式化时间" class="headerlink" title="PHP 格式化时间"></a>PHP 格式化时间</h3><p>2008-5-20 22:21:21</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> date(<span class="string">"Y-m-d H:i:s"</span>,time() - <span class="number">3600</span>*<span class="number">24</span>);</span><br><span class="line"><span class="comment">//使用strtotime,可以将任何字符串的时间表示转换为时间戳，仅针对英文</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;hr/&gt;"</span>;</span><br><span class="line"><span class="keyword">echo</span> date(<span class="string">"Y-m-d H:i:s"</span>,strtotime(<span class="string">"-1 day"</span>));</span><br><span class="line"><span class="comment">//在实际开发工作中，strtotime非常有用，因为对于表单来说，提交的数据都是字符串</span></span><br><span class="line"><span class="comment">//比如：2016-7-8，需要将其转换成时间戳，然后存到数据库</span></span><br></pre></td></tr></table></figure>
+<h4 id="求两个日期的差"><a href="#求两个日期的差" class="headerlink" title="求两个日期的差"></a>求两个日期的差</h4><p><code>(strtotime(&quot;2009-4-1&quot;) - strtotime(&quot;2003-1-1&quot;))/(3600*24)</code></p>
+<h3 id="不使用第三个变量交换两个数的值"><a href="#不使用第三个变量交换两个数的值" class="headerlink" title="不使用第三个变量交换两个数的值"></a>不使用第三个变量交换两个数的值</h3><p>方案1：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$a = <span class="string">'php'</span>;</span><br><span class="line">$b = <span class="string">'mysql'</span>;</span><br><span class="line"><span class="keyword">echo</span> $a,$b;</span><br><span class="line"><span class="keyword">list</span>($a,$b) = <span class="keyword">array</span>($b,$a);</span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;hr/&gt;"</span>;</span><br><span class="line"><span class="keyword">echo</span> $a,$b;</span><br></pre></td></tr></table></figure></p>
+<p>方案2：<br>对字符串进行编码,比如base64_encode, 要保证编码是可逆的</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$a = <span class="string">'php'</span>;</span><br><span class="line">$b = <span class="string">'mysql'</span>;</span><br><span class="line"><span class="keyword">echo</span> $a,$b;</span><br><span class="line">$a = base64_encode($a);</span><br><span class="line">$b = base64_encode($b);</span><br><span class="line"><span class="comment">//得到一个有&amp;连接符的字符串</span></span><br><span class="line">$a = $a .<span class="string">'&amp;'</span>. $b;</span><br><span class="line"><span class="comment">//使用字符串分隔函数，分隔成数组</span></span><br><span class="line">$b = explode(<span class="string">'&amp;'</span>, $a);</span><br><span class="line"><span class="comment">//得到第一个字符串并解码</span></span><br><span class="line">$a = base64_decode($b[<span class="number">1</span>]);</span><br><span class="line"><span class="comment">//得到第二个字符串并解码</span></span><br><span class="line">$b = base64_decode($b[<span class="number">0</span>]);</span><br><span class="line"></span><br><span class="line"><span class="keyword">echo</span> <span class="string">"&lt;hr/&gt;"</span>;</span><br><span class="line"><span class="keyword">echo</span> $a,$b;</span><br></pre></td></tr></table></figure>
+<h3 id="PHP传值和值引用"><a href="#PHP传值和值引用" class="headerlink" title="PHP传值和值引用"></a>PHP传值和值引用</h3><p>按值传递：<br>函数范围内对值的任何改变在函数外部都会被忽略</p>
+<p>按引用传递：<br>函数范围内对值的任何改变在函数外部也能反映出这些修改</p>
+<p>优缺点：<br>按值传递时，php 必须复制值。特别是对于大型的字符串和对象来说，这将会是一个代价很大的操作。</p>
+<p>按引用传递则不需要复制值，对于性能提高很有好处。</p>
+<p>变量默认总是传值赋值。那也就是说，当将一个表达式的值赋予一个变量时，整个原始表达式的值被赋值到目标变量。这意味着，例如，当一个变量的值赋予另外一个变量时，改变其中一个变量的值，将不会影响到另外一个变量。</p>
+<p>PHP 也提供了另外一种方式给变量赋值： 引用赋值。这意味着新的变量简单的引用（换言之， “ 成为其别名”<br>或者“ 指向”）了原始变量。改动新的变量将影响到原始变量，反之亦然。使用引用赋值，简单地将一个&amp; 符号加到将要赋值的变量前（源变量） 。</p>
+<p>对象默认是传引用。<br>对于较大的数据，传引用比较好，这样可以节省内存的开销。</p>
+<h3 id="格式化数字为金额形式"><a href="#格式化数字为金额形式" class="headerlink" title="格式化数字为金额形式"></a>格式化数字为金额形式</h3><p>将1234567890 转换成1,234,567,890 每3 位用逗号隔开的形式</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$str = <span class="string">'1234567890'</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">str</span><span class="params">($str)</span></span>&#123;</span><br><span class="line">    <span class="comment">//反转字符串得到0987654321</span></span><br><span class="line">    $str = strrev($str);</span><br><span class="line">    <span class="comment">//使用，分割字符串，得到 098,765,432,1</span></span><br><span class="line">    $str = chunk_split($str,<span class="number">3</span>,<span class="string">','</span>);</span><br><span class="line">    <span class="comment">//再次反转字符串，得到 ,1,234,567,890</span></span><br><span class="line">    $str = strrev($str);</span><br><span class="line">    <span class="comment">//去掉左边的，得到1，,24,567,890</span></span><br><span class="line">    $str = ltrim($str, <span class="string">','</span>);</span><br><span class="line">    <span class="keyword">return</span> $str;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">echo</span> str($str);</span><br></pre></td></tr></table></figure>
+<h4 id="如何实现中文字符串翻转"><a href="#如何实现中文字符串翻转" class="headerlink" title="如何实现中文字符串翻转"></a>如何实现中文字符串翻转</h4><p><code>strrev()</code>, 不过这种方法都不能解决中文字符串翻转问题,会出错</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">header(<span class="string">'Content-Type:text/html;charset:utf8'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * 反转utf8字符串</span><br><span class="line"> * <span class="doctag">@param</span> $str string 待反转字符串 </span><br><span class="line"> * <span class="doctag">@return</span> string </span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">strrev_utf8</span><span class="params">($str)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> join(<span class="string">""</span>,array_reverse(preg_split(<span class="string">"//u"</span>, $str)));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$str = <span class="string">"巅峰工作室"</span>;</span><br><span class="line"><span class="keyword">echo</span>  strrev_utf8($str);</span><br><span class="line"><span class="comment">// 输出,室作工峰巅</span></span><br></pre></td></tr></table></figure>
+<h4 id="字符串ww-baidu-com-如何使用PHP-对他进行"><a href="#字符串ww-baidu-com-如何使用PHP-对他进行" class="headerlink" title="字符串ww.baidu.com 如何使用PHP 对他进行"></a>字符串ww.baidu.com 如何使用PHP 对他进行</h4><p>操作使字符串以moc.udiab.输出?</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$str = <span class="string">'www.baidu.com'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">echo</span> strrev(str_replace(<span class="string">'www'</span>, <span class="string">''</span>, $str));</span><br><span class="line"><span class="comment">// 输出，moc.udiab.</span></span><br></pre></td></tr></table></figure>
+<h3 id="显示客户端-和服务器端IP地址"><a href="#显示客户端-和服务器端IP地址" class="headerlink" title="显示客户端 和服务器端IP地址"></a>显示客户端 和服务器端IP地址</h3><p>客户端IP:<br><code>$_SERVER[&quot;REMOTE_ADDR&quot;]</code><br>或者<br><code>getenv(&#39;REMOTE_ADDR&#39;)</code><br>服务器IP:<br><code>$_SERVER[&quot;SERVER_ADDR&quot;]</code></p>
+<h3 id="如何得到当前执行脚本路径-包括所得到参数"><a href="#如何得到当前执行脚本路径-包括所得到参数" class="headerlink" title="如何得到当前执行脚本路径,包括所得到参数"></a>如何得到当前执行脚本路径,包括所得到参数</h3><p>获取当前执行脚本路径使用<br><code>$_SERVER[&quot;SCRIPT_FILENAME&quot;]</code> 显示以’/‘分隔<br><code>__FILE__</code> 显示以’\’分隔</p>
+<p>获取参数，使用<br><code>$_SERVER[&quot;QUERY_STRING&quot;]</code></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">//basename(path) 获取当前文件名</span></span><br><span class="line">$script_name = basename(<span class="keyword">__file__</span>);</span><br><span class="line">print_r($script_name);</span><br></pre></td></tr></table></figure>
+<h2 id="未完待续-微澜蜀黍"><a href="#未完待续-微澜蜀黍" class="headerlink" title="未完待续 @微澜蜀黍"></a>未完待续 @微澜蜀黍</h2>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -560,7 +801,7 @@
       <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="/images/avatar.png"
                alt="微澜@ijhin.com" />
           <p class="site-author-name" itemprop="name">微澜@ijhin.com</p>
           <p class="site-description motion-element" itemprop="description">有一种平静，叫做死水微澜。</p>
@@ -568,7 +809,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -576,7 +817,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
